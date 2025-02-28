@@ -2,48 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Case-02</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
     <style>
-        .bottom-bar {
-            width: 1600px;
-            height: 50px;
-            background-color: gray;
-            /*fixed position*/
+        header{
+            border:solid black;
+            border-width: 0 0 5px 0;
+        }
+        #logo{
+            width: 8vw;
+            padding: 2vh;
+        }
+        .navbar{
+            list-style-type: none;
+            position: absolute;
+        }
+        #header-navbar{
+            display: flex;
+            right: 1vw;
+            top: 0vw;
+        }
+        #header-navbar>li{
+            margin: 10px;
+        }
+
+        .navbar-font{
+            font-weight: 600;
+            font-style: normal;
+        }
+        nav{
+            width:15vw;
+            height: 83.1vh;
+            background: darkblue;
+            position: relative;
+        }
+        #side-navbar>li{
+            margin: 15px;
+            color: white;
+        }
+
+        footer{
+            width: 100vw;
+            height: 6.1vh;
+            background-color: grey;
             position: fixed;
-            right: 0;
+            top: 670px;
+        }
+        .footer-text{
+            font-family:  serif;
+            font-weight: 600;
+            color: white;
+            width: 10vw;
+            height: 1vh;
+
+            position: absolute;
+            top: 0;
             bottom: 0;
             left: 0;
-            margin: auto;
-        }
-        .top-bar{
-            border: gray 1600px 50px;
-            /*fixed position*/
-            position: fixed;
             right: 0;
-            top: 0;
-            left: 0;
             margin: auto;
         }
-        .text-ijse h1 {
-            font-size: 20px;
-            color: white;
-            text-align: center;
+        main{
+            position: absolute;
+            width: 100vw;
+            height: 83.1vh;
+            top: 10.8vh;
         }
+        main>section{
+            width: 85vw;
+            height: 83.1vh;
+            position: absolute;
+            top: 0;
+            left: 15vw;
+        }
+        #video-list{
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 10px 16px;
+        }
+        .video{
+            width: 28vw;
+            border: 1px solid mediumseagreen;
+        }
+        #paragraph-div{
+            margin: 10px;
+        }
+
     </style>
 </head>
 <body>
-<div class="bottom-bar">
-    <div class="text-ijse">
-        <h1>Developed by IJSE</h1>
-    </div>
-</div>
 
-<div class="top-bar">
-    <div>
-        <img src="assets/image/R.jpg" width="60px">
-    </div>
-</div>
+<!--Page Header-->
+<header>
+    <img src="assets/image/img.png" alt="ijse-Logo" id="logo">
+    <ul id="header-navbar" class="navbar">
+        <li><a class="navbar-font">Home</a></li>
+        <li><a class="navbar-font">Services</a></li>
+        <li><a class="navbar-font">Contacts</a></li>
+        <li><a class="navbar-font">About Us</a></li>
+    </ul>
+</header>
 
+<!--Page Center-->
+<main>
+    <!--Page Nav Bar-->
+    <nav>
+        <ul id="side-navbar" class="navbar">
+            <li><a class="navbar-font">Home</a></li>
+            <li><a class="navbar-font">Services</a></li>
+            <li><a class="navbar-font">Contacts</a></li>
+            <li><a class="navbar-font">About Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!--Video List-->
+        <ul id="video-list">
+            <li>
+                <video alt="Video" class="video" muted autoplay loop>
+                    <source src="assets/video/2994491-hd_1920_1080_24fps.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <video alt="Video" class="video" muted autoplay loop>
+                    <source src="assets/video/2994491-hd_1920_1080_24fps.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li>
+                <video alt="Video" class="video" muted autoplay loop>
+                    <source src="assets/video/2994491-hd_1920_1080_24fps.mp4" type="video/mp4">
+                </video>
+            </li>
+        </ul>
+        <!--Paragraph List-->
+        <div id="paragraph-div">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda consequuntur cupiditate dolorum eos illum molestias quaerat? A, accusantium ad commodi earum odit quae qui, quia saepe temporibus veniam voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda consequuntur cupiditate dolorum eos illum molestias quaerat? A, accusantium ad commodi earum odit quae qui, quia saepe temporibus veniam voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda consequuntur cupiditate dolorum eos illum molestias quaerat? A, accusantium ad commodi earum odit quae qui, quia saepe temporibus veniam voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda consequuntur cupiditate dolorum eos illum molestias quaerat? A, accusantium ad commodi earum odit quae qui, quia saepe temporibus veniam voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda consequuntur cupiditate dolorum eos illum molestias quaerat? A, accusantium ad commodi earum odit quae qui, quia saepe temporibus veniam voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda consequuntur cupiditate dolorum eos illum molestias quaerat? A, accusantium ad commodi earum odit quae qui, quia saepe temporibus veniam voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda consequuntur cupiditate dolorum eos illum molestias quaerat? A, accusantium ad commodi earum odit quae qui, quia saepe temporibus veniam voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda consequuntur cupiditate dolorum eos illum molestias quaerat? A, accusantium ad commodi earum odit quae qui, quia saepe temporibus veniam voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda consequuntur cupiditate dolorum eos illum molestias quaerat? A, accusantium ad commodi earum odit quae qui, quia saepe temporibus veniam voluptates.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda consequuntur cupiditate dolorum eos illum molestias quaerat? A, accusantium ad commodi earum odit quae qui, quia saepe temporibus veniam voluptates.</p>
+        </div>
+    </section>
+
+</main>
+<!--Page Down Header-->
+<footer>
+    <p class="footer-text">Developed By IJSE</p>
+</footer>
 
 </body>
 

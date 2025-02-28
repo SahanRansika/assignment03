@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-03</title>
+    <style>
+        #main-circle{
+            height: 100vh;
+            background-color: white;
+        }
+        #main-circle>div{
+            width: 299px;
+            aspect-ratio: 1/1;
+            background-color: transparent;
+            border-radius: 100%;
+            border: 10px solid grey;
+            z-index: 2;
+
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #main-circle>div>div{
+            width: 280px;
+            aspect-ratio: 1/1;
+            background-color: transparent;
+            border-radius: 100%;
+            border: 10px solid red;
+            z-index: 2;
+
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+        #main-circle>div>div>div{
+            width: 280px;
+            aspect-ratio: 1/1;
+            background-color: purple;
+            border-radius: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+        #main-circle>div>div>div>h1{
+            color: white;
+            top: 8rem;
+            left: 7rem;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+<!--circle-->
+<section id="main-circle">
+    <div>
+        <div>
+            <div>
+                <h1>Hello</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
