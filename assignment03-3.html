@@ -8,8 +8,9 @@
             height: 100vh;
             background-color: white;
         }
+
         #main-circle>div{
-            width: 299px;
+            width: 250px;
             aspect-ratio: 1/1;
             background-color: transparent;
             border-radius: 100%;
@@ -24,7 +25,7 @@
             margin: auto;
         }
         #main-circle>div>div{
-            width: 280px;
+            width: 231px;
             aspect-ratio: 1/1;
             background-color: transparent;
             border-radius: 100%;
@@ -39,28 +40,42 @@
             margin: auto;
 
         }
-        #main-circle>div>div>div{
-            width: 280px;
+        .circle{
+            width: 250px;
             aspect-ratio: 1/1;
-            background-color: purple;
+            z-index: 1;
             border-radius: 100%;
-            position: fixed;
+
+            position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
 
-        }
-        #main-circle>div>div>div>h1{
             color: white;
-            top: 8rem;
-            left: 7rem;
-            right: 0;
-            margin: auto;
-            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5vw;
         }
 
+        .page{
+            height: 100vh;
+            background-color: white;
+            position: relative;
+        }
+
+        #c1{
+            background-color: cornflowerblue;
+        }
+        #c2{
+            background-color: red;
+        }
+        #c3{
+            background-color: mediumpurple;
+        }
     </style>
 </head>
 <body>
@@ -68,12 +83,20 @@
 <section id="main-circle">
     <div>
         <div>
-            <div>
-                <h1>Hello</h1>
-            </div>
         </div>
     </div>
 </section>
 
+<section class="page">
+    <div id="c1" class="circle">Hello</div>
+</section>
+<!--2nd circle-->
+<section class="page">
+    <div id="c2" class="circle">Welcome to</div>
+</section>
+<!--3rd circle-->
+<section class="page">
+    <div id="c3" class="circle">Instute<br>Of<br>Software<br>Engineering</div>
+</section>
 </body>
 </html>
